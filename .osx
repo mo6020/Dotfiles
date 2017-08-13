@@ -31,9 +31,9 @@ cp -R ~/Repositories/Dotfiles/powerline/* ~/.config/powerline
 # NOTE - automate adding this to Powerline config...
 
 # Install Bullet-Train ZSH Theme
-wget https://gist.githubusercontent.com/mo6020/de52459d568a6883fa4ba22fca985534/raw/71cc151de00b60c80ab2df720f5abd945b8bde30/bullet-train.zsh-theme && mv bullet-train.zsh-theme $ZSH/themes/bullet-train.zsh-theme
+cp ~/Repositories/Dotfiles/bullet-train.zsh-theme $ZSH/themes/bullet-train.zsh-theme
 # Might have to change this depending on Ansible behaviour?
-mkdir ~/.vim && mkdir ~/.vim/colors
+#mkdir ~/.vim && mkdir ~/.vim/colors
 mv ~/Tomorrow-Night-Eighties.vim ~/.vim/colors/Tomorrow-Night-Eighties.vim
 
 #### End Ed custom settings
