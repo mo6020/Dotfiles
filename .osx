@@ -26,7 +26,7 @@ rm -rf ../fonts
 # Install Powerline
 #pip install powerline-status
 mkdir ~/.config/powerline
-cp -R /usr/local/lib/python2.7/site-packages/powerline/config_files/* ~/.config/powerline
+cp -R ~/Repositories/Dotfiles/powerline/* ~/.config/powerline
 #pip install powerline-gitstatus
 # NOTE - automate adding this to Powerline config...
 
