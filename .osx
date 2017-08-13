@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # ~/.macos — https://mths.be/macos
+# Updated to include my customer settings, and to do some more shell config
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -8,6 +9,34 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
 sudo -v
+
+# Ed custom stuff!!!
+# Install oh-my-zsh to beautify and manage zsh
+echo "Installing oh-my-zsh"
+curl -L http://install.ohmyz.sh | sh
+
+echo "Installing zsh-syntax-highlighting"
+cd ~/.oh-my-zsh/custom/plugins && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+# Install Powerline patched fonts
+echo "Installing Powerline patched fonts"
+git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh
+rm -rf ../fonts
+
+# Install Powerline
+pip install powerline-status
+mkdir ~/.config/powerline
+cp -R /usr/local/lib/python2.7/site-packages/powerline/config_files/* ~/.config/powerline
+pip install powerline-gitstatus
+# NOTE - automate adding this to Powerline config...
+
+# Install Bullet-Train ZSH Theme
+wget https://gist.githubusercontent.com/mo6020/de52459d568a6883fa4ba22fca985534/raw/71cc151de00b60c80ab2df720f5abd945b8bde30/bullet-train.zsh-theme && mv bullet-train.zsh-theme $ZSH/themes/bullet-train.zsh-theme
+# Might have to change this depending on Ansible behaviour?
+mkdir ~/.vim && mkdir ~/.vim/colors
+mv ~/Tomorrow-Night-Eighties.vim ~/.vim/colors/Tomorrow-Night-Eighties.vim
+
+#### End Ed custom settings
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
