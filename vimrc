@@ -80,3 +80,8 @@ set cindent       " stricter rules for C programs
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
 set laststatus=2
 set cmdheight=1
+
+" Powerline stuff
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup

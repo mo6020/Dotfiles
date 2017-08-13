@@ -46,16 +46,15 @@ ZSH_THEME="bullet-train"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew osx screen ssh-agent sublime tmux web-search vagrant zsh-syntax-highlighting)
+plugins=(aws git brew osx screen ssh-agent sublime web-search vagrant zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-#source aws_zsh_completer.sh
+#source /usr/local/share/zsh/site-functions/_aws
 
 # User configuration
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/ed/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/share/python:/Users/ed/Library/Python/2.7/lib/python/site-packages"
-
-alias ls='ls -Gla --color'
+export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ed/.node/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+alias ls='ls -Gla'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -72,3 +71,5 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Powerline config
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
