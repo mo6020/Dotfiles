@@ -47,6 +47,9 @@ ZSH_THEME="bullet-train"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(aws git brew osx screen ssh-agent sublime web-search vagrant zsh-syntax-highlighting)
+# GCP completion in zsh
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 
 source $ZSH/oh-my-zsh.sh
 #source /usr/local/share/zsh/site-functions/_aws
