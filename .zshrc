@@ -57,6 +57,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ed/.node/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export GOPATH="/Users/ed/go:/Users/ed/go:/Users/ed/Repositories/"
 alias ls='ls -Gla'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -76,3 +77,6 @@ fi
 
 # Powerline config
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
