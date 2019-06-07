@@ -60,6 +60,7 @@ export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ed/.n
 export GOPATH="/Users/ed/go:/Users/ed/go:/Users/ed/Repositories/"
 alias ls='ls -Gla'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias connect_rbk_tunnel='ssh edward.morgan@supporttunnel.colo.rubrik.com -i .ssh/rubrik_id_rsa'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
