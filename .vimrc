@@ -61,8 +61,9 @@ set textwidth=82
 set lbr
 syntax on
 map ; :
-colorscheme Tomorrow-Night-Eighties 
+"colorscheme Tomorrow-Night-Eighties 
 "colorscheme molokai
+colorscheme nord
 set number
 set hlsearch
 set paste
