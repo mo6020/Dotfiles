@@ -46,7 +46,7 @@ ZSH_THEME="bullet-train"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws git brew osx screen ssh-agent sublime web-search vagrant zsh-syntax-highlighting)
+plugins=(aws git brew macos screen ssh-agent sublime web-search vagrant zsh-syntax-highlighting)
 # GCP completion in zsh
 export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
