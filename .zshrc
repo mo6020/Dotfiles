@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bullet-train"
+ZSH_THEME="cloud"
 #ZSH_THEME="pure"
 
 # Example aliases
@@ -46,11 +46,8 @@ ZSH_THEME="bullet-train"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws git brew macos screen ssh-agent sublime web-search vagrant zsh-syntax-highlighting)
+plugins=(aws git brew macos screen ssh-agent sublime web-search vagrant)
 # GCP completion in zsh
-export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 source $ZSH/oh-my-zsh.sh
 #source /usr/local/share/zsh/site-functions/_aws
@@ -61,7 +58,6 @@ export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ed/.n
 export GOPATH="/Users/ed/go:/Users/ed/go:/Users/ed/Repositories/"
 alias ls='ls -Gla'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
-alias connect_rbk_tunnel='ssh edward.morgan@supporttunnel.colo.rubrik.com -i ~/.ssh/rubrik_id_rsa'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
