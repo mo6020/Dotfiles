@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/ed/.node/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export GOPATH="/Users/ed/go:/Users/ed/go:/Users/ed/Repositories/"
 alias ls='ls -Gla'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
@@ -86,4 +86,3 @@ if [ -f '/Users/ed/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ed/google-cl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ed/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ed/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/bin:$PATH"
